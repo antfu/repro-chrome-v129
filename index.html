@@ -1,0 +1,7 @@
+<body>
+  <div>Repro of circular imports with TLA.</div>
+  <div>You should see a green "It works" below</div>
+  <div>This stopped work from Chrome v129; Works for Chrome v128, FireFox and Safari, and Node.js v20</div>
+  <div>In Chrome v129, the `import()` hangs (never resolve) and doesn't even throw errors</div>
+  <script src="./foo.js" type="module"></script>
+</body>
