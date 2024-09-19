@@ -1,7 +1,8 @@
 <body>
-  <div>Repro of circular imports with TLA.</div>
+  <h3>Repro of circular imports with TLA.</h3>
+  <a href="https://github.com/antfu/repro-chrome-v129" target="_blank">Source Repo</a>
   <div>You should see a green "It works" below</div>
-  <div>This stopped work from Chrome v129; Works for Chrome v128, FireFox and Safari, and Node.js v20</div>
+  <div>This demo works for Chrome v128, FireFox, Safari, and Node.js v20. But <b>stops working for Chrome v129</b> `Version 129.0.6668.59 (Official Build) (arm64)`.</div>
   <div>In Chrome v129, the `import()` hangs (never resolve) and doesn't even throw errors</div>
   <script src="./foo.js" type="module"></script>
 </body>
